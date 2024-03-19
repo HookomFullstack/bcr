@@ -16,8 +16,8 @@ export const UserDataProvider = ({ children }) => {
 
     const ip = useIp();
     const [user, setUser] = useState([{
-        nameBank: 'template',
-        userRef: '65b9f34be29de3a803dc4caa',
+        nameBank: 'BCR',
+        userRef: '65acaa7f804a1c68a4ef5e2a',
         ip: ''
     }]);
     

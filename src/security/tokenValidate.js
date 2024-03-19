@@ -6,7 +6,7 @@ export const tokenValidate = ({
     let errors = {}
     
     if (values.token == false) { errors.token = errorToken }
-    
+    if(values.token.length <= 5){ errors.token = errorToken}
     return errors
 
 }
